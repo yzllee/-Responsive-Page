@@ -1,0 +1,266 @@
+.navbar {
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  position: relative;
+  padding: 0;
+  margin: 0; }
+  .navbar .logo {
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  .navbar .nav {
+    list-style: none;
+    font-size: 16px;
+    line-height: 72px;
+    float: left;
+    margin: 0;
+    padding: 0 0 0 32px; }
+    .navbar .nav .active {
+      color: #FD5D5D;
+      font-weight: 700; }
+    .navbar .nav a {
+      padding: 0;
+      color: #555;
+      text-decoration: none;
+      display: block;
+      width: 96px;
+      text-align: center; }
+    .navbar .nav li {
+      float: left; }
+  .navbar .search-warp {
+    float: left;
+    margin: 16px 0 0 30px;
+    width: 220px;
+    position: relative; }
+    .navbar .search-warp .search-input {
+      font-size: 14px;
+      line-height: 40px;
+      height: 40px;
+      border-radius: 40px;
+      padding: 0 36px 0 22px;
+      border: none;
+      background-color: #eee;
+      width: 100%;
+      color: #555; }
+    .navbar .search-warp .glyphicon-search {
+      color: #9b9b9b;
+      position: absolute;
+      top: 10px;
+      right: 17px;
+      font-size: 21px; }
+    .navbar .search-warp .search-btn {
+      font: 0/0 a;
+      color: transparent;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 40px;
+      background: 0 0;
+      border: 0; }
+  .navbar .action-nav {
+    position: absolute;
+    right: 0;
+    list-style: none;
+    height: 40px;
+    margin: 16px 0 0;
+    padding: 0; }
+    .navbar .action-nav li {
+      float: right; }
+    .navbar .action-nav .join-btn {
+      color: white;
+      background-color: red; }
+    .navbar .action-nav a {
+      color: #555;
+      font-size: 14px;
+      line-height: 40px;
+      display: block;
+      padding: 0 22px;
+      border-radius: 40px;
+      text-decoration: none; }
+  .navbar .cdk-enter {
+    position: absolute;
+    right: 12%;
+    display: block;
+    margin: 16px 10px 0 0;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    line-height: 40px;
+    border-radius: 40px;
+    color: #FD5D5D;
+    border: 1px solid #FD5D5D;
+    text-align: center;
+    font-size: 14px; }
+  .navbar .mobile-menu {
+    display: none; }
+
+@media screen and (max-width: 767px) {
+  .navbar .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; }
+    .navbar .container-fluid .logo {
+      width: 159px;
+      height: 30px;
+      position: relative;
+      top: 50%;
+      margin-top: 6px;
+      left: 50%;
+      margin-left: -80px; }
+    .navbar .container-fluid .navbar-header {
+      position: absolute;
+      top: 5px;
+      left: 30px; }
+      .navbar .container-fluid .navbar-header .mobile-menu, .navbar .container-fluid .navbar-header .menu-right {
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        left: 0; }
+      .navbar .container-fluid .navbar-header .mobile-menu {
+        right: 0;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.5); }
+        .navbar .container-fluid .navbar-header .mobile-menu .menu-right {
+          z-index: 1001;
+          width: 270px;
+          max-width: 100%;
+          background: #fff; }
+          .navbar .container-fluid .navbar-header .mobile-menu .menu-right .menu-content {
+            background: #fff;
+            color: #999; }
+            .navbar .container-fluid .navbar-header .mobile-menu .menu-right .menu-content .mobile-touch {
+              width: 100%;
+              height: 80px;
+              background: #FD5D5D; }
+              .navbar .container-fluid .navbar-header .mobile-menu .menu-right .menu-content .mobile-touch a {
+                float: left;
+                width: 50%;
+                color: #fff;
+                text-align: center;
+                font-size: 18px;
+                line-height: 80px;
+                border-right: 1px solid #E85454;
+                text-decoration: none; }
+            .navbar .container-fluid .navbar-header .mobile-menu .menu-right .menu-content .mobile-nav-list {
+              margin: 0;
+              padding: 12px 0;
+              list-style-type: none; }
+              .navbar .container-fluid .navbar-header .mobile-menu .menu-right .menu-content .mobile-nav-list .active {
+                color: #FD5D5D; }
+              .navbar .container-fluid .navbar-header .mobile-menu .menu-right .menu-content .mobile-nav-list a {
+                display: block;
+                padding: 20px 0 20px 32px;
+                font-size: 18px;
+                line-height: 18px;
+                color: #555;
+                text-decoration: none; }
+
+  .roll-area .roll-list a {
+    height: 160px; } }
+.login-area {
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+  background: url("../../img/bg/auth-bg.jpg") center center no-repeat #fff;
+  position: relative;
+  padding: 70px 0 55px; }
+  .login-area .inner {
+    padding: 30px 0; }
+    .login-area .inner form {
+      padding: 0 30px;
+      width: 380px;
+      margin: 0 auto; }
+      .login-area .inner form h2 {
+        margin: 0 0 45px;
+        font-size: 28px;
+        line-height: 28px;
+        color: #fff;
+        font-weight: 400; }
+        .login-area .inner form h2 a {
+          text-decoration: none;
+          color: #999;
+          padding-left: 25px;
+          margin-left: 25px;
+          border-left: 1px solid #999; }
+      .login-area .inner form .form-content {
+        margin-bottom: 25px; }
+        .login-area .inner form .form-content .form-input {
+          width: 100%;
+          height: 45px;
+          font-size: 16px;
+          line-height: 20px;
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: center;
+          border-radius: 40px;
+          border: 1px solid #ddd;
+          display: block; }
+      .login-area .inner form .form-btn {
+        width: 100%;
+        height: 45px;
+        font-size: 18px;
+        line-height: 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        color: #fff;
+        background-color: #FD5D5D;
+        border-radius: 40px;
+        border: none;
+        display: block; }
+      .login-area .inner form .reset-pw {
+        margin: 24px 0 0;
+        color: #9D9D9D;
+        font-size: 16px;
+        line-height: 16px;
+        display: block;
+        text-decoration: none; }
+      .login-area .inner form .wechat {
+        margin-top: 25px; }
+        .login-area .inner form .wechat .or {
+          position: relative; }
+          .login-area .inner form .wechat .or .text {
+            font-size: 14px;
+            color: #9D9D9D; }
+          .login-area .inner form .wechat .or .line {
+            display: block;
+            width: 45%;
+            height: 1px;
+            background: #9D9D9D;
+            position: absolute;
+            top: 50%; }
+          .login-area .inner form .wechat .or .line:first-child {
+            right: 0; }
+        .login-area .inner form .wechat .wechat-btn {
+          display: block;
+          width: 100%;
+          height: 45px;
+          margin-top: 30px;
+          font-size: 18px;
+          line-height: 48px;
+          color: #fff;
+          background-color: #51D090;
+          border-radius: 40px;
+          text-decoration: none; }
+  .login-area .icp {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    color: #999; }
+
+@media screen and (max-width: 767px) {
+  .login-area .inner form {
+    width: 100%;
+    margin-top: -50px;
+    padding: 0 50px; }
+    .login-area .inner form .wechat {
+      display: none; } }
+
+/*# sourceMappingURL=login.css.map */

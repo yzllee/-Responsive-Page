@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>靠谱投 - 餐饮项目，投我喜欢</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
+    <script src="js/time.js"></script>
+</head>
+<body>
+<!--导航栏-->
+<header class="navbar navbar-default">
+    <div class="container-fluid">
+        <h1 class="logo">
+            <a href="http://www.kaoputou.com/"><img src="img/index/logo-new.png"></a>
+        </h1>
+
+        <!--手机端导航-->
+        <div class="navbar-header">
+            <a class="navbar-toggle" id="navbarA" href="#mobile-menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="mobile-menu" id="mobile-menu">
+                <div class="menu-right">
+                    <div class="menu-content">
+                        <div class="mobile-touch">
+                            <a href="public/login/login.html">登入</a>
+                            <a href="public/signup/signup.html">注册</a>
+                        </div>
+                        <ul class="mobile-nav-list">
+                            <li><a class="active" href="index.html">首页</a></li>
+                            <li><a href="public/like/like.html">投我喜欢</a></li>
+                            <li><a href="public/guide/guide.html">新手指南</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--PC端导航-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav">
+                <li><a class="active" href="index.html">首页</a></li>
+                <li><a href="public/like/like.html">投我喜欢</a></li>
+                <li><a href="public/rongzi/rongzi.html">融资之路</a></li>
+                <li><a href="public/guide/guide.html">新手指南</a></li>
+            </ul>
+
+            <div class="search-warp">
+                <form>
+                    <input type="text" class="search-input" placeholder="找项目">
+                    <span class="glyphicon glyphicon-search"></span>
+                    <input class="search-btn" type="submit" value="搜索按钮">
+                </form>
+            </div>
+
+            <ul class="action-nav">
+                <li><a class="join-btn" href="public/signup/signup.html">注册</a></li>
+                <li><a href="public/login/login.html">登入</a></li>
+            </ul>
+
+            <a class="cdk-enter" href="public/login/login.html">优先认购通道</a>
+        </div>
+    </div>
+</header>
+<!--滚动栏-->
+<div class="roll-area">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/turn/1.jpeg">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/turn/2.jpeg">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/turn/3.jpeg">
+            </div>
+        </div>
+        <!-- 分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+<!--纪录-->
+<div class="record">
+    <div class="inner">
+        <ul class="clearfix">
+            <li class="one"><strong>19</strong>项目已上线</li>
+            <li class="two"><strong>130,000</strong>人浏览</li>
+            <li class="three"><strong>123,321,123</strong>申请金额</li>
+            <li class="four"><strong>12,321,123</strong>已融资</li>
+        </ul>
+    </div>
+</div>
+<!--视频-->
+<div class="video-info">
+    <div class="inner">
+        <a class="video-btn" href="javascrip:void(0)"><img src="img/index/img-kpt-intro.jpg"></a>
+        <a class="video-btn" href="javascrip:void(0)"><img src="img/index/img-risk-tip.jpg"></a>
+    </div>
+</div>
+<!--众筹展示-->
+<div class="section">
+    <div class="section-head">
+        <h2>众筹中...</h2>
+    </div>
+    <ul class="projects">
+        <li class="card">
+            <a class="card-img" href="#"><img src="img/index/hbz3"></a>
+            <div class="card-body">
+                <h3>
+                    <a href="#">
+                        仔皇煲
+                        <span>/ 做有态度的煲仔饭</span>
+                    </a>
+                </h3>
+                <div class="sub">
+                    <p class="sub-location">
+                        <span class="glyphicon glyphicon-map-marker"></span>
+                        北京市
+                    </p>
+                    <p class="sub-new">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                        新店众筹
+                    </p>
+                </div>
+                <div class="face-photo">
+                    <img src="img/index/face1">
+                </div>
+                <p class="time-count">
+                    <span class="time-inner">融资倒计时:</span>
+                    <span class="time"></span>
+                </p>
+                <ul class="detail clearfix">
+                    <li class="money">
+                        <strong class="number">163
+                            <small class="f-small"> 万</small>
+                        </strong>
+                        <span class="f-label">项目总额</span>
+                    </li>
+                    <li class="price">
+                        <strong class="number">3.26
+                            <small class="f-small">万</small>
+                        </strong>
+                        <span class="f-label">每分金额</span>
+                    </li>
+                    <li class="day">
+                        <strong class="number">316
+                            <small class="f-small">万</small>
+                        </strong>
+                        <span class="f-label">申请金额</span>
+                    </li>
+                    <li class="people">
+                        <strong class="number">58
+                            <small class="f-small">人</small>
+                        </strong>
+                        <span class="f-label">申请认购</span>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="card">
+            <a class="card-img" href="#"><img src="img/index/hbz2"></a>
+            <div class="card-body">
+                <h3>
+                    <a href="#">
+                        仔皇煲
+                        <span>/ 做有态度的煲仔饭</span>
+                    </a>
+                </h3>
+                <div class="sub">
+                    <p class="sub-location">
+                        <span class="glyphicon glyphicon-map-marker"></span>
+                        北京市
+                    </p>
+                    <p class="sub-new">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                        新店众筹
+                    </p>
+                </div>
+                <div class="face-photo">
+                    <img src="img/index/face1">
+                </div>
+                <p class="time-count">
+                    <span class="time-inner">融资倒计时:</span>
+                    <span class="time"></span>
+                </p>
+                <ul class="detail clearfix">
+                    <li class="money">
+                        <strong class="number">163
+                            <small class="f-small"> 万</small>
+                        </strong>
+                        <span class="f-label">项目总额</span>
+                    </li>
+                    <li class="price">
+                        <strong class="number">3.26
+                            <small class="f-small">万</small>
+                        </strong>
+                        <span class="f-label">每分金额</span>
+                    </li>
+                    <li class="day">
+                        <strong class="number">387
+                            <small class="f-small">万</small>
+                        </strong>
+                        <span class="f-label">申请金额</span>
+                    </li>
+                    <li class="people">
+                        <strong class="number">78
+                            <small class="f-small">人</small>
+                        </strong>
+                        <span class="f-label">申请认购</span>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="card">
+            <a class="card-img" href="#"><img src="img/index/xgll"></a>
+            <div class="card-body">
+                <h3>
+                    <a href="#">
+                        湘阁里辣
+                        <span>/ 品质源于诚信</span>
+                    </a>
+                </h3>
+                <div class="sub">
+                    <p class="sub-location">
+                        <span class="glyphicon glyphicon-map-marker"></span>
+                        广东省
+                    </p>
+                    <p class="sub-new">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                        新店众筹
+                    </p>
+                </div>
+                <div class="face-photo">
+                    <img src="img/index/face2">
+                </div>
+                <div class="progress-last">
+                    <div class="progress-red" style="width: 90%"></div>
+                </div>
+                <ul class="detail clearfix">
+                    <li class="money">
+                        <strong class="number">90%
+                            <small class="f-small"></small>
+                        </strong>
+                        <span class="f-label">融资进度</span>
+                    </li>
+                    <li class="price">
+                        <strong class="number">230
+                            <small class="f-small">万</small>
+                        </strong>
+                        <span class="f-label">项目总额</span>
+                    </li>
+                    <li class="day">
+                        <strong class="number">2.00
+                            <small class="f-small">万</small>
+                        </strong>
+                        <span class="f-label">每分金额</span>
+                    </li>
+                    <li class="people">
+                        <strong class="number">18/
+                            <small class="f-small">30天</small>
+                        </strong>
+                        <span class="f-label">剩余时间</span>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--众筹成功-->
+<div class="section">
+    <div class="section-head">
+        <h2>众筹成功</h2>
+        <a class="read-more" href="#">查看全部 15</a>
+    </div>
+    <div class="complete clearfix">
+        <a class="c-projects">
+            <img src="img/complete/p1">
+            <div class="text-info">
+                <h4>杨记兴臭鳜鱼</h4>
+                <p>臭鳜鱼只有一种味道，就在杨记兴</p>
+                <p class="sub-location">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    北京市
+                </p>
+            </div>
+            <p class="number-info">
+                项目总额
+                <strong>360万</strong>
+                股东
+                <strong>43人</strong>
+            </p>
+            <div class="complete-icon">
+                <strong>融资<br/>成功</strong>
+            </div>
+        </a>
+        <a class="c-projects">
+            <img src="img/complete/p2">
+            <div class="text-info">
+                <h4>一味一诚烤全鱼</h4>
+                <p>好好学习，天天吃鱼！</p>
+                <p class="sub-location">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    北京市
+                </p>
+            </div>
+            <p class="number-info">
+                项目总额
+                <strong>250万</strong>
+                股东
+                <strong>30人</strong>
+            </p>
+            <div class="complete-icon">
+                <strong>融资<br/>成功</strong>
+            </div>
+        </a>
+        <a class="c-projects" style="margin-right: 0">
+            <img src="img/complete/p3">
+            <div class="text-info">
+                <h4>炊烟食代</h4>
+                <p>地道湘菜，长沙更受欢迎的地道湘菜</p>
+                <p class="sub-location">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    湖南省
+                </p>
+            </div>
+            <p class="number-info">
+                项目总额
+                <strong>300万</strong>
+                股东
+                <strong>27人</strong>
+            </p>
+            <div class="complete-icon">
+                <strong>融资<br/>成功</strong>
+            </div>
+        </a>
+        <a class="c-projects">
+            <img src="img/complete/p4">
+            <div class="text-info">
+                <h4>迷尚豆捞</h4>
+                <p>健康养颜金汤锅</p>
+                <p class="sub-location">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    四川省
+                </p>
+            </div>
+            <p class="number-info">
+                项目总额
+                <strong>231万</strong>
+                股东
+                <strong>46人</strong>
+            </p>
+            <div class="complete-icon">
+                <strong>融资<br/>成功</strong>
+            </div>
+        </a>
+        <a class="c-projects">
+            <img src="img/complete/p5">
+            <div class="text-info">
+                <h4>丰茂烤串</h4>
+                <p>羊肉现穿才好吃</p>
+                <p class="sub-location">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    上海市
+                </p>
+            </div>
+            <p class="number-info">
+                项目总额
+                <strong>360万</strong>
+                股东
+                <strong>43人</strong>
+            </p>
+            <div class="complete-icon">
+                <strong>融资<br/>成功</strong>
+            </div>
+        </a>
+        <a class="c-projects" style="margin-right: 0">
+            <img src="img/complete/p6">
+            <div class="text-info">
+                <h4>闫府私房菜</h4>
+                <p>腰子用心做！</p>
+                <p class="sub-location">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    天津市
+                </p>
+            </div>
+            <p class="number-info">
+                项目总额
+                <strong>360万</strong>
+                股东
+                <strong>43人</strong>
+            </p>
+            <div class="complete-icon">
+                <strong>融资<br/>成功</strong>
+            </div>
+        </a>
+        <a class="c-projects">
+            <img src="img/complete/p7">
+            <div class="text-info">
+                <h4>一味一诚烤全鱼</h4>
+                <p>好好学习，天天吃鱼！</p>
+                <p class="sub-location">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    北京市
+                </p>
+            </div>
+            <p class="number-info">
+                项目总额
+                <strong>360万</strong>
+                股东
+                <strong>43人</strong>
+            </p>
+            <div class="complete-icon">
+                <strong>融资<br/>成功</strong>
+            </div>
+        </a>
+        <a class="c-projects">
+            <img src="img/complete/p8">
+            <div class="text-info">
+                <h4>一味一诚烤全鱼</h4>
+                <p>好好学习，天天吃鱼！</p>
+                <p class="sub-location">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    北京市
+                </p>
+            </div>
+            <p class="number-info">
+                项目总额
+                <strong>360万</strong>
+                股东
+                <strong>43人</strong>
+            </p>
+            <div class="complete-icon">
+                <strong>融资<br/>成功</strong>
+            </div>
+        </a>
+        <a class="c-projects" style="margin-right: 0">
+            <img src="img/complete/p9">
+            <div class="text-info">
+                <h4>相约回家吃饭</h4>
+                <p>让爱回家，记忆中的味道！</p>
+                <p class="sub-location">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    湖南省
+                </p>
+            </div>
+            <p class="number-info">
+                项目总额
+                <strong>360万</strong>
+                股东
+                <strong>43人</strong>
+            </p>
+            <div class="complete-icon">
+                <strong>融资<br/>成功</strong>
+            </div>
+        </a>
+        <a class="c-projects">
+            <img src="img/complete/p10">
+            <div class="text-info">
+                <h4>丰茂烤串</h4>
+                <p>羊肉现穿才好吃</p>
+                <p class="sub-location">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    北京市
+                </p>
+            </div>
+            <p class="number-info">
+                项目总额
+                <strong>360万</strong>
+                股东
+                <strong>43人</strong>
+            </p>
+            <div class="complete-icon">
+                <strong>融资<br/>成功</strong>
+            </div>
+        </a>
+        <a class="c-projects">
+            <img src="img/complete/p11">
+            <div class="text-info">
+                <h4>阿达西</h4>
+                <p>真朋友，此相聚</p>
+                <p class="sub-location">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    北京市
+                </p>
+            </div>
+            <p class="number-info">
+                项目总额
+                <strong>360万</strong>
+                股东
+                <strong>43人</strong>
+            </p>
+            <div class="complete-icon">
+                <strong>融资<br/>成功</strong>
+            </div>
+        </a>
+        <a class="c-projects" style="margin-right: 0">
+            <img src="img/complete/p12">
+            <div class="text-info">
+                <h4>闫府私房菜</h4>
+                <p>腰子用心做！</p>
+                <p class="sub-location">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    山东省
+                </p>
+            </div>
+            <p class="number-info">
+                项目总额
+                <strong>360万</strong>
+                股东
+                <strong>43人</strong>
+            </p>
+            <div class="complete-icon">
+                <strong>融资<br/>成功</strong>
+            </div>
+        </a>
+        <a class="c-projects">
+            <img src="img/complete/p13">
+            <div class="text-info">
+                <h4>九锅一堂</h4>
+                <p>石锅川菜开创者</p>
+                <p class="sub-location">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    重庆市
+                </p>
+            </div>
+            <p class="number-info">
+                项目总额
+                <strong>360万</strong>
+                股东
+                <strong>43人</strong>
+            </p>
+            <div class="complete-icon">
+                <strong>融资<br/>成功</strong>
+            </div>
+        </a>
+        <a class="c-projects">
+            <img src="img/complete/p14">
+            <div class="text-info">
+                <h4>仔皇煲</h4>
+                <p>做有态度的煲仔饭</p>
+                <p class="sub-location">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    北京市
+                </p>
+            </div>
+            <p class="number-info">
+                项目总额
+                <strong>360万</strong>
+                股东
+                <strong>43人</strong>
+            </p>
+            <div class="complete-icon">
+                <strong>融资<br/>成功</strong>
+            </div>
+        </a>
+        <a class="c-projects" style="margin-right: 0">
+            <img src="img/complete/p15">
+            <div class="text-info">
+                <h4>很久以前</h4>
+                <p>只是家串店</p>
+                <p class="sub-location">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    上海市
+                </p>
+            </div>
+            <p class="number-info">
+                项目总额
+                <strong>360万</strong>
+                股东
+                <strong>43人</strong>
+            </p>
+            <div class="complete-icon">
+                <strong>融资<br/>成功</strong>
+            </div>
+        </a>
+    </div>
+</div>
+<!--即将上线-->
+<div class="list-head">
+    <h3>即将上线</h3>
+</div>
+<div class="coming-list">
+    <div class="list-inner">
+        <div class="clearfix">
+            <div class="lists"><img src="img/list/l1"></div>
+            <div class="lists"><img src="img/list/l2"></div>
+            <div class="lists"><img src="img/list/l3"></div>
+            <div class="lists"><img src="img/list/l4"></div>
+            <div class="lists"><img src="img/list/l5"></div>
+            <div class="lists"><img src="img/list/l6"></div>
+            <div class="lists"><img src="img/list/l7"></div>
+            <div class="lists"><img src="img/list/l8"></div>
+            <div class="lists"><img src="img/list/l9"></div>
+            <div class="lists"><img src="img/list/l10"></div>
+            <div class="lists"><img src="img/list/l11"></div>
+            <div class="lists"><img src="img/list/l12"></div>
+        </div>
+    </div>
+</div>
+<!--众筹资讯-->
+<div class="section">
+    <div class="section-head">
+        <h2>众筹资讯</h2>
+    </div>
+    <div class="articles">
+        <a class="article-link" href="">
+            <div class="overlay">
+                <h4>哇!你居然扫了二维码,你一定有很多问题想问</h4>
+                <p>我想你大概在想，3万块钱做老板是什么意思？如果您正在吃饭，可以先收藏文章回头再看 : )如果您不着急，请听我慢慢道来...
+                    您应该想知道，3万块能当什么样的老板？事情的由来是这样的：辣尚瘾想用众筹的方式打造下一家新店，于是，辣尚瘾和靠谱投平台合作，
+                    为新店寻找股东。我们想找到50个喜爱辣尚瘾的朋友，共同出资，辣尚瘾出100多万，股东每人出3万，一起开一家新店。</p>
+            </div>
+        </a>
+        <div class="article-list">
+            <ul>
+
+                <li><a href="#">哇！你居然扫了二维码，你一定有很多问题想问</a><span>06-30</span></li>
+
+                <li><a href="#">【投资人课堂】投资众筹餐饮，如何找到99%赚钱的项目</a><span>12-16</span></li>
+
+                <li><a href="#">什么样的餐饮众筹才是靠谱的？</a><span>12-05</span></li>
+
+                <li><a href="#">靠谱投创始人朱怀阳：请善待吃货们的众筹</a><span>11-27</span></li>
+
+                <li><a href="#">靠谱投CEO卿永：餐企莫上市！紧密式加盟才是未来出路</a><span>11-22</span></li>
+
+            </ul>
+            <a class="more-article" href="#">查看更多资讯</a>
+        </div>
+    </div>
+</div>
+<!--向导-->
+<div class="guide">
+    <div class="container">
+        <article class="c-inner">
+            <h3>投资靠谱、盈利的餐饮项目</h3>
+            <p>靠谱投为投资人提供优质精益的餐饮项目，并为投资人提供专业的投后管理服务。</p>
+            <p><a href="#" class="help-link">如何投资？</a></p>
+            <p class="action"><a href=# class="btn btn-sign">注册</a></p>
+        </article>
+        <article class="phone-hidden">
+            <h3>有效地融取项目资金</h3>
+            <p>靠谱投为餐饮品牌提供融资解决方案，为靠谱餐饮项目低成本、高效率实现融资目标。</p>
+            <p><a href="#" class="help-link">如何众筹？</a></p>
+            <p class="action"><a href="#" class="btn btn-secondary">提交申请</a></p>
+        </article>
+    </div>
+</div>
+<!--页脚-->
+<footer>
+    <div class="footer-info phone-hidden">
+        <div class="inner clearfix">
+
+            <div class="help-links fl">
+                <h4>关于我们</h4>
+                <ul class="fl">
+                    <li><a href="#">靠谱投介绍</a></li>
+                    <li><a href="#">加入我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">媒体报道</a></li>
+                </ul>
+            </div>
+
+            <div class="help-links fl">
+                <h4>帮助中心</h4>
+                <ul class="fl">
+                    <li><a href="#">新手指南</a></li>
+                    <li><a href="#">投资人指南</a></li>
+                    <li><a href="#">项目方指南</a></li>
+                    <li><a href="#">名词解释</a></li>
+                    <li><a href="#">常见问题</a></li>
+                </ul>
+            </div>
+
+            <div class="help-links fl">
+                <h4>相关协议</h4>
+                <ul class="fl">
+                    <li><a href="#">用户服务协议</a></li>
+                    <li><a href="#">投资服务协议</a></li>
+                    <li><a href="#">风险揭示书</a></li>
+                    <li><a href="#">靠谱投业务规则</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-links fl">
+                <h4>联系我们</h4>
+                <p class="airline">4000-400-177
+                    <span>周一至周六 9:00 — 21:00</span>
+                </p>
+                <a class="weibo-link" href="http://weibo.com/kaoputou" target="_blank">@靠谱投官方微博</a>
+            </div>
+
+            <div class="twocodes fr">
+                <div class="code fl">
+                    <img width="120" height="120" src="img/code/wechat.png">
+                    <span>靠谱投微信公众号</span>
+                </div>
+                <div class="code fl">
+                    <img width="120" height="120" src="img/code/app.png">
+                    <span>靠谱投移动客户端</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="foot-bottom">
+        <div class="inner clearfix">
+            <ul class="friends-link phone-hidden">
+                <li><a href="">友情链接</a></li>
+                <li><a href="http://www.zggonglue.com" target="_blank">掌柜攻略</a></li>
+                <li><a href="http://www.lagou.com" target="_blank">拉勾网</a></li>
+                <li><a href="http://www.canka168.com/" target="_blank">餐饮咖</a></li>
+                <li><a href="http://www.zhongchoujia.com/" target="_blank">众筹家</a></li>
+                <li><a href="http://www.zcw114.com/" target="_blank">种财网</a></li>
+            </ul>
+            <ul class="friends-link phone-show">
+                <li><a href="">关于靠谱投</a></li>
+                <li><a href="">用户服务协议</a></li>
+                <li><a href="">加入我们</a></li>
+                <li><a href="">帮助中心</a></li>
+            </ul>
+            <p class="icp"> &copy;2016 <a href="#">kaoputou.com 靠谱投</a> 京ICP备15039009号</p>
+        </div>
+    </div>
+</footer>
+<script src="js/mobile-menu.js"></script>
+<!--轮播-->
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: 3000,
+
+        // 分页器
+        pagination: '.swiper-pagination',
+
+        // 前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+
+    })
+</script>
+</body>
+</html>

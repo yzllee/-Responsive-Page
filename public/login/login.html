@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>靠谱投 - 登入</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../js/mobile-menu.js"></script>
+</head>
+<body>
+<!--导航栏-->
+<header class="navbar navbar-default">
+    <div class="container-fluid">
+        <h1 class="logo">
+            <a href="http://www.kaoputou.com/"><img src="../../img/index/logo-new.png"></a>
+        </h1>
+
+        <!--手机端导航-->
+        <div class="navbar-header">
+            <a class="navbar-toggle" id="navbarA" href="#mobile-menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="mobile-menu" id="mobile-menu">
+                <div class="menu-right">
+                    <div class="menu-content">
+                        <div class="mobile-touch">
+                            <a href="login.html">登入</a>
+                            <a href="../signup/signup.html">注册</a>
+                        </div>
+                        <ul class="mobile-nav-list">
+                            <li><a href="../../index.html">首页</a></li>
+                            <li><a href="../like/like.html">投我喜欢</a></li>
+                            <li><a href="../guide/guide.html">新手指南</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--PC端导航-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav">
+                <li><a href="../../index.html">首页</a></li>
+                <li><a href="../like/like.html">投我喜欢</a></li>
+                <li><a href="../rongzi/rongzi.html">融资之路</a></li>
+                <li><a href="../guide/guide.html">新手指南</a></li>
+            </ul>
+
+            <div class="search-warp">
+                <form>
+                    <input type="text" class="search-input" placeholder="找项目">
+                    <span class="glyphicon glyphicon-search"></span>
+                    <input class="search-btn" type="submit" value="搜索按钮">
+                </form>
+            </div>
+
+            <ul class="action-nav">
+                <li><a class="join-btn" href="../signup/signup.html">注册</a></li>
+                <li><a href="login.html">登入</a></li>
+            </ul>
+
+            <a class="cdk-enter" href="login.html">优先认购通道</a>
+        </div>
+    </div>
+</header>
+<!--表单栏-->
+<div class="login-area">
+    <div class="inner">
+        <form>
+            <h2>
+                登入
+                <a href="../signup/signup.html">注册</a>
+            </h2>
+            <div class="form-content"><input class="form-input" type="tel" name="mobile" value placeholder="手机号"></div>
+            <div class="form-content"><input class="form-input" type="password" name="password" value placeholder="密码"></div>
+            <button class="form-btn" type="submit">登入</button>
+            <a class="reset-pw" href="#"><span class="glyphicon glyphicon-ok-circle"></span>找回密码</a>
+            <div class="wechat">
+                <div class="or">
+                    <span class="line"></span>
+                    <span class="text">或</span>
+                    <span class="line"></span>
+                </div>
+                <a class="wechat-btn" href="#">微信登入</a>
+            </div>
+        </form>
+    </div>
+    <p class="icp">&copy;2016 靠谱投 京ICP备15039009号</p>
+</div>
+</body>
+</html>
