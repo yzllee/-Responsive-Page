@@ -1,7 +1,7 @@
 {
   "name": "application-name",
   "version": "0.0.1",
-  "devDependencies": {
+  "dependencies": {
     "jquery":"^3.0.0",
     "bootstrap":"^3.3.5",
     "swiper":"^3.3.1"
